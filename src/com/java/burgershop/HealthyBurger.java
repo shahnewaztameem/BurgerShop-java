@@ -1,6 +1,6 @@
 package com.java.burgershop;
 
-// Also create two extra varieties of Hamburgers (subclasses) to cater for
+// create two extra varieties of Hamburgers (subclasses) to cater for
 // a) Healthy burger (on a brown rye bread roll), plus two addition items that can be added.
 // The healthy burger can have 6 items (Additions) in total.
 // hint:  you probably want to process the two additional items in this new class (subclass of Hamburger),
@@ -15,7 +15,6 @@ public class HealthyBurger extends Hamburger {
 
     public HealthyBurger(String meat, double basePrice) {
         super("Healthy Burger", "Brown rye bread roll", meat, basePrice);
-
     }
 
     @Override
