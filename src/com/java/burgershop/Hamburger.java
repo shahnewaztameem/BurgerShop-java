@@ -40,7 +40,6 @@ public class Hamburger {
         } else {
             this.basePrice = basePrice;
         }
-
     }
 
     public void additionalItem1(String name, double price) {
@@ -68,16 +67,17 @@ public class Hamburger {
     }
 
     public String getCustomizedBurger() {
+        double additionalPrice = this.basePrice;
         if(additionalItemName1 != null) {
-            this.basePrice += additionalItemPrice1;
+            additionalPrice += additionalItemPrice1;
         } if(additionalItemName2 != null) {
-            this.basePrice += additionalItemPrice2;
+            additionalPrice += additionalItemPrice2;
         } if(additionalItemName3 != null) {
-            this.basePrice += additionalItemPrice3;
+            additionalPrice += additionalItemPrice3;
         } if(additionalItemName4 != null) {
-            this.basePrice += additionalItemPrice4;
+            additionalPrice += additionalItemPrice4;
         }
-        return "After adding additional item total price of the burger is " + this.basePrice;
+        return "After adding additional item total price of the burger is " + additionalPrice;
     }
 
     public String getName() {
